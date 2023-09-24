@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  font-family: sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f8f9fd;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container {
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 6px 0 rgba(167, 167, 167, 0.2), 0 6px 20px 0 rgba(167, 167, 167, 0.2);
+}
+
+.list-container {
+  display: flex;
+}
+
+.mensagem {
+  font-size: 13px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+
+input[type="text"] {
+  height: 20px;
+}
+
+input[type="password"] {
+  height: 20px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #6cb0f0;
+  border:#6cb0f0;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background: #5395d3;
 }
